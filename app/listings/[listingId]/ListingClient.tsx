@@ -98,8 +98,8 @@ const ListingClient: React.FC<ListingClientProps> = ({
   useEffect(() => {
     if (dateRange.startDate && dateRange.endDate) {
       const dayCount = differenceInDays(
-        dateRange.startDate,
         dateRange.endDate,
+        dateRange.startDate,
       );
 
       if (dayCount && listing.price) {
